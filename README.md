@@ -24,18 +24,17 @@ Track 1 instructions.
  `./darknet detect test data/aic540.data cfg/aic540.cfg aic540_final.weights /path/to/image.jpg `
 
 * run inference on a batch of images, with corresponding text files
-..* `cd track1`
-..* `mkdir results`
-⋅⋅* create a list of images we want to detect `find /datasets/aic480/test/images -type f -name "*.jpeg > aic480_test_set.txt"`
-
-..* run detection with 10% minimum confidence threshold `./darknet detector test_file data/aic480.data cfg/aic480.cfg weights/yolo-object_30000.weights test_sets/aic480_test_set.txt -thresh 0.10 -outdir results`
+  * `cd track1`
+  * `mkdir results`
+  * create a list of images we want to detect `find /datasets/aic480/test/images -type f -name "*.jpeg > aic480_test_set.txt"`
+  * run detection with 10% minimum confidence threshold `./darknet detector test_file data/aic480.data cfg/aic480.cfg weights/yolo-object_30000.weights test_sets/aic480_test_set.txt -thresh 0.10 -outdir results`
 
 * train darknet from pretrained convolutional weights
 `./darknet detector train data/aic1080.data data/aic1080.cfg /data/group1/weights/darknet19_448.conv.23`
 
 * run inference on video and write video to disk.
 `./darknet detector demo data/aic540.data data/aic540.cfg weights/aic540_final.weights /home/charles/Videos/vlc-record-2017-08-01-23h50m10s-walsh_santomas_20170602_007.mp4 `
-..* output will be saved as Output.avi, 
+  * output will be saved as Output.avi, 
 
 
 ### Contributors
