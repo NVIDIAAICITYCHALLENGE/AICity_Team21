@@ -1,0 +1,6 @@
+classes= 15
+train  = data/480_train.txt
+valid  = data/480_val.txt
+names = data/aic540.names
+backup = backup
+
