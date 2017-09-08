@@ -16,7 +16,7 @@ Track 1 instructions.
 0. clone repo
 1. cd track1
 2. make
-3. download model weights. 
+3. download model weights from this link: https://drive.google.com/drive/folders/0B_Wc2TdfdVh5UmlKNl9mX2FKOHc?usp=sharing
 
 ### Code Example
 
